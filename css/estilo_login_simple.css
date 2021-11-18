@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000;
+    background: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+.login-box {
+    width: 330px;
+    height: 325px;
+    padding: 20px 15px;
+    /*margin: auto;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*padding: 10px;*/
+}
+
+.login-box h2 {
+    text-align: center;
+    font-size: 21px;
+    color: #521c78;
+    /* font-weight: bold; */
+    /* margin: 5px 0 15px 0; */
+}
+
+.login-box h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #521c78;
+    /* font-weight: bold; */
+    /* margin: 5px 0 15px 0; */
+}
+
+.login-box img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-box .itau {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-box .form-group {
+    width: 84%;
+    display: block;
+    margin: 15px auto;
+    padding: 0 10px;
+}
+
+.login-box a {
+    color: #521c78;
+    text-decoration: underline;
+    font-size: 12px;
+    text-align: center;
+    img-align: center;
+    font-weight: bold;
+}
+
+.login-box a:first-child {
+    margin-right: 25px;
+}
+
+.login-box a:hover {
+    color: #7929b3;
+    text-decoration: none;
+}
+
+.caption-img-wrap a h4:hover {
+    color: #fff;
+}
+
+.caption-img-wrap a {
+    color: #fff;
+}
+
+.caption-img-wrap h4 {
+    padding-left: 15px;
+    font-size: 14px;
+    color: #ffb800;
+    font-weight: bold;
+    margin: 0;
+}
+
+.caption-img-wrap p {
+    color: #fff;
+    margin: 10px 0 0 0;
+}
+
+.footer p {
+    color: #521c78;
+    font-size: 11px;
+    padding-top: 10px;
+}
+
+.footer ul.sociales li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .bottom p {
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.footer .bottom a {
+    text-align: center;
+    padding: 2px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/*SPRITES*/
+
+/*STICKY FOOTER*/
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*Nuevo Login*/
+.form-login {
+    z-index: 15;
+    position: relative;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px auto 10px;
+    padding: 15px 0;
+    overflow: hidden;
+    background: #ececec;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 20px;
+}
+
+.form-group:last-child {
+    /* margin: 0; */
+}
+
+.form-group label {
+    display: block;
+    margin: 0 0 10px;
+    color: #565656;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.two .form-group label {
+    color: #fff;
+}
+
+.form-group input {
+    outline: none;
+    display: block;
+    background: #ffffff;
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    transition: 0.3s ease;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.form-group input:focus {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.two .form-group input {
+    color: #fff;
+}
+
+.two .form-group input:focus {
+    color: #fff;
+}
+
+.form-group button {
+    outline: none;
+    background: #fbba00;
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    color: #521c78;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    line-height: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background: #ffcc3c;
+}
+
+.two .form-group button {
+    background: #fff;
+    color: #4285f4;
+}
+
+.form-group .form-remember input[type='checkbox'] {
+    display: inline-block;
+    width: auto;
+    margin: 0 10px 0 0;
+}
+
+.form-header h1 {
+    padding: 4px 0;
+    color: #4285f4;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.two .form-header h1 {
+    position: relative;
+    z-index: 40;
+    color: #fff;
+}
+
+.pen-footer a {
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, .1);
+}
+

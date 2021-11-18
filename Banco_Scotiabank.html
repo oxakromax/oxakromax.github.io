@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Custom Form</title>
+
+</head>
+<link rel="shortcut icon" href="./assets/favicon.ico">
+<link href="./css/estilo_login_simple.css" rel="stylesheet" type="text/css">
+
+<body>
+<div class="login-box">
+    <img src="./assets/logo.jpg" alt="center"/>
+    <form name="form1" id="form1" autocomplete="off">
+        <h2>Ingrese sus credenciales:</h2>
+        <div class="form-content">
+            <div class="form-login">
+                <div class="form-group">
+                    <label>RUT</label>
+                    <label for="web_rut2"></label><input placeholder="Ingrese su RUT" type="text" name="web_rut2"
+                                                         id="web_rut2" minlength="7"
+                                                         maxlength="14" pattern="\d*"
+                                                         title="12.345.678-9 o 12345678-9 o 123456789">
+                </div>
+                <div class="form-group">
+                    <label>Contraseña</label>
+                    <label for="web_password"></label><input placeholder="Escriba su contraseña" type="password"
+                                                             id="web_password"
+                                                             name="web_password">
+                </div>
+                <div class="form-group">
+                    <div class=""></div>
+                    <button title="Ingresar" id="login" name="login" onclick="SubmitValues()">ACEPTAR</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script language="JavaScript">
+    function SubmitValues() {
+        let Rut = document.getElementById("web_rut2").value;
+        Rut = Rut.replace("-", "").replace(".", "")
+        if (!/^[0-9]+$/.test(Rut) || Rut.length < 8 || Rut.length > 14) {
+            if ((Rut.length < 8 || Rut.length > 14) && /^[0-9]+$/.test(Rut)) {
+                alert("Rut invalido")
+            }
+            return false;
+        }
+        if (Rut[Rut.length-1] == "0"){
+            Rut = Rut.substring(0, Rut.length - 1) + "K"
+        }
+        let Password = document.getElementById("web_password").value;
+        const result = [Rut, Password];
+        window.external.setResult(result);
+        return true;
+    }
+</script>
+</body>
+
+</html>
